@@ -366,3 +366,122 @@ body {
 }
 
 textarea::placeholder { color: rgba(255,255,255,0.7); }
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body {
+    background: #0f0f0f;
+    color: white;
+}
+
+/* Diseño de Cristal (Glassmorphism) */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80') center/cover;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Navbar Estilo RentCar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #1a1a1a;
+    border-bottom: 2px solid #f39c12;
+}
+
+.nav-logo h2 span { color: #f39c12; }
+
+.nav-links { display: flex; list-style: none; gap: 20px; align-items: center; }
+
+.nav-links a { color: white; text-decoration: none; font-size: 0.9rem; }
+
+.logout-btn {
+    background: #f39c12;
+    color: black !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Catálogo */
+.hero-mini { text-align: center; padding: 40px 0; }
+.hero-mini h1 span { color: #f39c12; }
+
+.filter-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; }
+
+.filter-btn {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn.active { background: #f39c12; color: black; border-color: #f39c12; }
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 5%;
+}
+
+.car-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.car-card:hover { transform: translateY(-5px); border-color: #f39c12; }
+
+.car-card img { width: 100%; height: 180px; object-fit: cover; }
+
+.car-info { padding: 20px; }
+
+.category-tag {
+    background: #f39c12;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.price { font-size: 1.4rem; color: #f39c12; margin: 10px 0; }
+.price span { font-size: 0.8rem; color: #888; }
+
+.btn-rent {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #f39c12;
+    color: #f39c12;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-rent:hover { background: #f39c12; color: black; }
+
+.input-group { position: relative; margin-bottom: 15px; }
+.input-group input { width: 100%; padding: 10px 10px 10px 40px; background: rgba(255,255,255,0.1); border: none; border-radius: 5px; color: white; }
+.input-group span { position: absolute; left: 10px; top: 10px; color: #f39c12; }
