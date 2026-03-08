@@ -3,69 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RentCar - Iniciar Sesión</title>
+    <title>RentCar Express - Inicio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
-    <div class="login-container">
-        <div class="login-box">
-            <div class="brand">
-                <span class="material-symbols-outlined logo-icon">directions_car</span>
-                <h1>Rent<span>Car</span></h1>
-                <p>Tu viaje comienza aquí</p>
-            </div>
-
-            <!-- Quitamos el action para manejarlo con JS -->
-            <form id="loginForm">
-                <div class="input-group">
-                    <span class="material-symbols-outlined">mail</span>
-                    <input type="email" id="email" placeholder="Correo electrónico" required>
-                </div>
-                
-                <div class="input-group">
-                    <span class="material-symbols-outlined">lock</span>
-                    <input type="password" id="password" placeholder="Contraseña" required>
-                </div>
-
-                <div class="options">
-                    <label><input type="checkbox"> Recordarme</label>
-                    <a href="forgot-password.html">¿Olvidaste tu contraseña?</a>
-                </div>
-
-                <button type="submit" class="btn-login">Ingresar</button>
-            </form>
-
-            <div class="footer">
-                <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
-            </div>
+<body class="dashboard-body">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="material-symbols-outlined">directions_car</span>
+            <h2>Rent<span>Car</span></h2>
         </div>
-    </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Vehículos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li id="auth-link"><a href="login.html" class="logout-btn">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
 
-    <!-- SCRIPT DE VALIDACIÓN -->
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            // 1. Evitamos que la página se recargue automáticamente
-            e.preventDefault();
+    <!-- Hero Section adaptada del proyecto viejo -->
+    <header class="main-content">
+        <div class="hero-mini">
+            <h1>Renta el Vehículo Perfecto para tu <span>Aventura</span></h1>
+            <p>Explora nuestra flota exclusiva y reserva en segundos.</p>
+        </div>
 
-            // 2. Obtenemos los valores que el usuario escribió
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
+        <!-- Filtros del proyecto viejo -->
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterCars('todos')">Todos</button>
+            <button class="filter-btn" onclick="filterCars('economico')">Económico</button>
+            <button class="filter-btn" onclick="filterCars('suv')">SUV</button>
+            <button class="filter-btn" onclick="filterCars('lujo')">Lujo</button>
+        </div>
 
-            // 3. DEFINIMOS LAS CREDENCIALES DE PRUEBA
-            const USUARIO_CORRECTO = "admin@rentcar.com";
-            const CLAVE_CORRECTA = "12345";
+        <!-- Grilla de Autos Dinámica -->
+        <div id="vehicleGrid" class="car-grid">
+            <!-- Se carga mediante JS -->
+        </div>
+    </header>
 
-            // 4. VALIDACIÓN
-            if (email === USUARIO_CORRECTO && password === CLAVE_CORRECTA) {
-                // Si es correcto, mostramos un mensaje y redirigimos
-                alert("¡Acceso concedido! Bienvenido al sistema.");
-                window.location.href = "dashboard.html"; 
-            } else {
-                // Si es incorrecto, mostramos un error
-                alert("Error: Correo o contraseña incorrectos.\n\nPrueba con:\nUsuario: admin@rentcar.com\nClave: 12345");
-            }
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
