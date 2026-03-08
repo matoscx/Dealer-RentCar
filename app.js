@@ -37,7 +37,7 @@ const seedData = {
       brand: 'Ferrari',
       model: 'La Ferrari',
       year: 2024,
-      category: 'suv',
+      category: 'Deportivo',
       transmission: 'Automática',
       fuel: 'Gasolina',
       seats: 2,
@@ -84,7 +84,25 @@ const seedData = {
       image: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=1200&q=80',
       features: ['Aire acondicionado', 'USB', 'Seguro básico', 'Frenos ABS'],
       description: 'Compacto y eficiente para moverte por la ciudad con ahorro y comodidad.'
-    }
+    },
+    {
+      id: 5,
+      name: 'Jeep Wrangler',
+      brand: 'Jeep',
+      model: 'Wrangler',
+      year: 2023,
+      category: 'SUV',
+      transmission: 'Manual',
+      fuel: 'Gasolina',
+      seats: 4,
+      luggage: 3,
+      location: 'Santo Domingo',
+      pricePerDay: 60,
+      rating: 4.6,
+      image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
+      features: ['Tracción 4x4', 'Bluetooth', 'GPS', 'Seguro básico'],
+      description: 'Ideal para aventuras off-road y escapadas de fin de semana con estilo robusto.'
+    },
   ],
   bookings: [],
   inquiries: []
