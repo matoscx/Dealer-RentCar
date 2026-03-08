@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RentCar - Panel Administrativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <nav class="navbar">
+        <div class="nav-logo"><h2>Rent<span>Car</span></h2></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ver Catálogo</a></li>
+            <li><a href="#" class="active">Administrar</a></li>
+        </ul>
+    </nav>
+
+    <div class="admin-container">
+        <div class="glass-container">
+            <h2 style="margin-bottom: 20px;">Gestión de Inventario</h2>
+            <table class="table-glass">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Vehículo</th>
+                        <th>Categoría</th>
+                        <th>Precio/Día</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="adminTableBody">
+                    <!-- JS cargará los datos -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
