@@ -1,1 +1,18 @@
+{
+  "name": "dealer-rentcar",
+  "version": "1.0.0",
+  "description": "Sistema de alquiler de vehículos RentCar Express",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^7.0.0"
+  }
+}
 
