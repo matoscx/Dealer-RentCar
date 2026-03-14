@@ -13,13 +13,13 @@ RentCar Express es una plataforma web que permite gestionar el alquiler de vehí
 
 ## 🛠 Tecnologías utilizadas
 Node.js  
-Express  
+Express.js  
 SQLite  
 HTML  
 CSS  
 JavaScript  
 JWT  
-bcryptjs 
+bcryptjs
 
 ## ⚙️ Ejecutar proyecto completo
 Para ejecutar el sistema de **RentCar Express** de manera local, primero es necesario instalar todas las dependencias del proyecto y luego iniciar el servidor backend.
