@@ -1,19 +1,32 @@
-# Dealer-RentCar
+# 🚗 RentCar Express – Dealer-RentCar
 
-Proyecto Final de ING SOFTWARE 2.
+Proyecto Final de **Ingeniería de Software II**.
 
-## Novedades implementadas
-- Backend con **Express + SQLite** (`backend/server.js`) con base de datos SQL real.
-- Seguridad: `helmet`, `rate-limit`, JWT, hash de contraseñas con `bcryptjs`, validaciones y autorización por rol.
-- Roles con páginas separadas: `admin.html`, `customer.html`, `agent.html`.
-- Catálogo completo en `catalog.html` integrado con API.
-- Checkout actualizado con cálculo de total por día + cargo de servicio + impuestos.
+RentCar Express es una plataforma web que permite gestionar el alquiler de vehículos de forma rápida, segura y organizada. El sistema permite a los usuarios explorar el catálogo de autos disponibles, realizar reservas y administrar el proceso de renta de manera sencilla. Además, incluye un panel administrativo para gestionar vehículos, usuarios y operaciones del sistema.
 
-## Ejecutar proyecto completo
+# ✨ Novedades Implementadas
+🚀 Backend con **Express + SQLite** (`backend/server.js`) con base de datos SQL real.  
+🔐 Sistema de seguridad con **helmet**, **express-rate-limit**, autenticación con **JWT** y contraseñas cifradas con **bcryptjs**.  
+👥 Control de acceso por roles con páginas separadas: **admin.html**, **customer.html** y **agent.html**.  
+🚗 Catálogo de vehículos interactivo (`catalog.html`) conectado con la API.  
+💳 Sistema de checkout con cálculo automático de **precio por día**, **cargo de servicio** e **impuestos**.
+
+## 🛠 Tecnologías utilizadas
+Node.js  
+Express  
+SQLite  
+HTML  
+CSS  
+JavaScript  
+JWT  
+bcryptjs 
+
+## ⚙️ Ejecutar proyecto completo
+Para ejecutar el sistema de **RentCar Express** de manera local, primero es necesario instalar todas las dependencias del proyecto y luego iniciar el servidor backend.
+
 ```bash
 npm install
 npm run start
-```
 Backend: `http://localhost:3000`
 
 Para abrir las páginas estáticas (frontend):
@@ -22,10 +35,11 @@ npm run serve
 ```
 Frontend: `http://localhost:8000`
 
-## Credenciales admin demo
+## 👨‍💻 Credenciales admin demo
+Para acceder al panel administrativo del sistema se pueden utilizar las siguientes credenciales de prueba
 - Usuario: `admin@rentcar.com`
 - Contraseña: `Admin123*`
 
-## Documentación
+## 📄 Documentación
 - Estado actual del sistema: `docs/ESTADO_ACTUAL_SISTEMA.md`
 - Script SQL base: `backend/schema.sql`
